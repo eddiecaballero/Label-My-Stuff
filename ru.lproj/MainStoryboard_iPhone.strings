@@ -1,0 +1,30 @@
+
+/* Class = "UINavigationItem"; title = "Albums"; ObjectID = "ESt-cg-Hc5"; */
+"ESt-cg-Hc5.title" = "Альбомы";
+
+/* Class = "UICollectionViewController"; title = "Create"; ObjectID = "Gws-p5-Yus"; */
+"Gws-p5-Yus.title" = "Создать";
+
+/* Class = "UINavigationItem"; title = "Add to Album"; ObjectID = "VRR-Vu-Mzx"; */
+"VRR-Vu-Mzx.title" = "AДобавить в альбом";
+
+/* Class = "UITabBarItem"; title = "Scan"; ObjectID = "Xc6-VO-FTS"; */
+"Xc6-VO-FTS.title" = "Сканировать";
+
+/* Class = "UITabBarItem"; title = "Create"; ObjectID = "YcX-N5-TYt"; */
+"YcX-N5-TYt.title" = "Создать";
+
+/* Class = "UIButton"; normalTitle = "Scan"; ObjectID = "eEI-2u-dZj"; */
+"eEI-2u-dZj.normalTitle" = "Сканировать";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "mzt-dZ-2TL"; */
+"mzt-dZ-2TL.title" = "Отмена";
+
+/* Class = "UITextField"; placeholder = "Type here"; ObjectID = "o8T-pu-fgl"; */
+"o8T-pu-fgl.placeholder" = "Ввести текст";
+
+/* Class = "UILabel"; text = "Scan with Camera"; ObjectID = "oPL-p2-iSB"; */
+"oPL-p2-iSB.text" = "Сканировать через камеру";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "pFz-yv-LNw"; */
+"pFz-yv-LNw.title" = "Пункт";

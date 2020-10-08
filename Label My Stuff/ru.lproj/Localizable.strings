@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Label My Stuff
+
+  Created by Eddie Caballero on 12/19/16.
+  Copyright © 2016 Eddie Caballero. All rights reserved.
+*/
+
+"Sharing" = "Поделиться";
+"Add To" = "Добавить в";
+"Delete" = "Удалить";
+"Add" = "Добавить";
+"No Photos. You can add photos via device camera or accessing the camera roll." = "Нет фото. Вы можете добавить фото через камеру вашего устройства или из фотоплёнки.";
+"How would you like to add picture?" = "Каким образом вы хотите добавить фото?";
+"Cancel" = "Отмена";
+"Camera" = "Камера";
+"Photo Album" = "Фотоальбом";
+"Select Photo" = "Выбрать фото";
+"Add to Existing Album" = "Добавить в существующий альбом";
+"Add to New Album" = "Добавить в новый альбом";
+"New Album" = "Новый альбом";
+"Enter a name for this album" = "Введите имя альбома";
+"%lu Photo Selected" = "%lu Выбранное фото";
+"%lu Photos Selected" = "%lu Выбранное фото";
+"Save" = "Сохранить";
+"%lu of %lu" = "%lu из %lu";
+"Delete Photo" = "Удалить фото";
+"Menu" = "Меню";
+"New album not created." = "Новый альбом не создан.";
+"Folder already exists, please rename." = "Папка с данным именем уже существует, пожалуйста, переименуйте.";
+"Ok" = "Ok";
+
+"Scan" = "Сканировать";
+"Albums" = "Альбомы";

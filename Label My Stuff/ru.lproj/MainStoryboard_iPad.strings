@@ -1,0 +1,9 @@
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "DAt-pA-dR7"; */
+"DAt-pA-dR7.title" = "название";
+
+/* Class = "UINavigationItem"; title = "Albums"; ObjectID = "bXo-iu-PbW"; */
+"bXo-iu-PbW.title" = "Альбомы";
+
+/* Class = "UILabel"; text = "Scan with Camera"; ObjectID = "q03-iY-mev"; */
+"q03-iY-mev.text" = "Сканировать через камеру";

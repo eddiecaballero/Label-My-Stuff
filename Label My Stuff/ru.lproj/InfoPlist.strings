@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+"NSCameraUsageDescription" = "Используется для сканирования или сфотографировать";
+"NSPhotoLibraryUsageDescription" = "Используется для просмотра фотографий";
