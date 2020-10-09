@@ -3,7 +3,7 @@ Label My Stuff
 
 ## Description
  
- A universal app published to the App Store in order to help users keep inventory by generating, printing and scaning QR codes.
+ A universal app published to the App Store in order to help users keep inventory by generating, printing and scanning QR codes.
  
  Remarkably enough it is still backward compatible all the way back to iOS 6!
  
