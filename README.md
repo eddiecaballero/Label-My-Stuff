@@ -15,3 +15,5 @@ Label My Stuff
 * ZBarSDK
 * BCGenieEffect
 * ECSlidingViewController (Modified version updated to keep backward compatibility and fix a screen rotation issue on the iPad).
+
+All graphics I prepared myself using Gimp and Inkscape.
