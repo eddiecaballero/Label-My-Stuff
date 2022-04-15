@@ -13,6 +13,7 @@
 		2C367A6E191F309D00B3ACDD /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C367A6D191F309D00B3ACDD /* DisplayViewController.m */; };
 		2C3D4D631D5D0E7900F39129 /* closedtrash.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3D4D621D5D0E7900F39129 /* closedtrash.png */; };
 		2C3D4D651D5D0E8000F39129 /* opentrash.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3D4D641D5D0E8000F39129 /* opentrash.png */; };
+		2C44E72528090E6D00366C51 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C44E72428090E6D00366C51 /* CoreServices.framework */; };
 		2C4D3ACB199014ED00FC7840 /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D3ACA199014ED00FC7840 /* PrintViewController.m */; };
 		2C4D3ACE19901AF700FC7840 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D3ACD19901AF700FC7840 /* UIView+Additions.m */; };
 		2C4E425219363CA500EF15F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4E425119363CA500EF15F0 /* AVFoundation.framework */; };
@@ -31,7 +32,6 @@
 		2C9C9FF31D89F5B700818484 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9C9FF21D89F5B700818484 /* Constants.m */; };
 		2CA0AF7B1D67D114006D32CA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0AF7A1D67D114006D32CA /* Launch Screen.storyboard */; };
 		2CA0AF7D1D67DB5A006D32CA /* 512.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0AF7C1D67DB5A006D32CA /* 512.png */; };
-		2CA25A0C1915A0CC0051E2C0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA25A0B1915A0CC0051E2C0 /* MobileCoreServices.framework */; };
 		2CA7CACF1E085ED70051A6CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CA7CAD11E085ED70051A6CD /* Localizable.strings */; };
 		2CAF550E197F066200A033AF /* PrintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF550D197F066200A033AF /* PrintView.xib */; };
 		2CB30D781D07552C00B76464 /* UIWindow+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB30D771D07552C00B76464 /* UIWindow+Additions.m */; };
@@ -69,6 +69,7 @@
 		2C367A6D191F309D00B3ACDD /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
 		2C3D4D621D5D0E7900F39129 /* closedtrash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closedtrash.png; sourceTree = "<group>"; };
 		2C3D4D641D5D0E8000F39129 /* opentrash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opentrash.png; sourceTree = "<group>"; };
+		2C44E72428090E6D00366C51 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		2C4D3AC9199014ED00FC7840 /* PrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
 		2C4D3ACA199014ED00FC7840 /* PrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
 		2C4D3ACC19901AF700FC7840 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
@@ -155,7 +156,7 @@
 				2C8250AB192C2EA000F077BC /* iAd.framework in Frameworks */,
 				2C8250A6192C26DB00F077BC /* CoreImage.framework in Frameworks */,
 				2C8250A4192C259B00F077BC /* QuartzCore.framework in Frameworks */,
-				2CA25A0C1915A0CC0051E2C0 /* MobileCoreServices.framework in Frameworks */,
+				2C44E72528090E6D00366C51 /* CoreServices.framework in Frameworks */,
 				2CD7DE4A19119B63001D1FB5 /* CoreGraphics.framework in Frameworks */,
 				2CD7DE4C19119B63001D1FB5 /* UIKit.framework in Frameworks */,
 				2CD7DE4819119B63001D1FB5 /* Foundation.framework in Frameworks */,
@@ -242,6 +243,7 @@
 		2CD7DE4619119B63001D1FB5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C44E72428090E6D00366C51 /* CoreServices.framework */,
 				2C5338141964FF1A0010D0EA /* CoreData.framework */,
 				2C4E425119363CA500EF15F0 /* AVFoundation.framework */,
 				2C8250AA192C2EA000F077BC /* iAd.framework */,
@@ -356,7 +358,6 @@
 				2CD7DE4019119B63001D1FB5 /* Sources */,
 				2CD7DE4119119B63001D1FB5 /* Frameworks */,
 				2CD7DE4219119B63001D1FB5 /* Resources */,
-				F8B42BD5D929107AF7B53DF2 /* [CP] Embed Pods Frameworks */,
 				D85E15E16F7574463342BAFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -374,7 +375,7 @@
 		2CD7DE3C19119B63001D1FB5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "Eddie Caballero";
 				TargetAttributes = {
 					2CD7DE4319119B63001D1FB5 = {
@@ -385,10 +386,9 @@
 			};
 			buildConfigurationList = 2CD7DE3F19119B63001D1FB5 /* Build configuration list for PBXProject "Label My Stuff" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				es,
@@ -436,13 +436,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Label My Stuff-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D85E15E16F7574463342BAFC /* [CP] Copy Pods Resources */ = {
@@ -451,28 +454,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Label My Stuff/Pods-Label My Stuff-resources.sh",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-back.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-help.html",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-helpicons.png",
+				"${PODS_ROOT}/ZBarSDK/iphone/res/zbar-samples.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-back.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-help.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-helpicons.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zbar-samples.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Label My Stuff/Pods-Label My Stuff-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8B42BD5D929107AF7B53DF2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Label My Stuff/Pods-Label My Stuff-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Label My Stuff/Pods-Label My Stuff-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -565,14 +562,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -595,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -611,14 +617,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -634,7 +649,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -653,7 +668,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Label My Stuff/Label My Stuff-Prefix.pch";
 				INFOPLIST_FILE = "Label My Stuff/Label My Stuff-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardocaballero.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Label My Stuff";
 				PROVISIONING_PROFILE = "";
@@ -673,7 +689,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Label My Stuff/Label My Stuff-Prefix.pch";
 				INFOPLIST_FILE = "Label My Stuff/Label My Stuff-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardocaballero.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Label My Stuff";
 				PROVISIONING_PROFILE = "";

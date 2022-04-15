@@ -20,7 +20,8 @@
     
     [application setStatusBarHidden:NO];
     
-    [GADMobileAds configureWithApplicationID:kadAppID];
+    //[GADMobileAds configureWithApplicationID:kadAppID];
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
     
     
     //NSLog(@"HOME DIRECTORY: %@", [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);

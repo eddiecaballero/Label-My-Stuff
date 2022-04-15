@@ -1,12 +1,16 @@
-ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=*] = ZBarReaderViewImpl_Simulator.m
 EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*][arch=*] = ZBarReaderViewImpl_Capture.m ZBarCaptureReader.m
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 NDEBUG=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BCGenieEffect" "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" "${PODS_ROOT}/Headers/Public/ZBarSDK" "${PODS_ROOT}/Headers/Public/ZXingObjC"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/BCGenieEffect" "$PODS_CONFIGURATION_BUILD_DIR/ZBarSDK" "$PODS_CONFIGURATION_BUILD_DIR/ZXingObjC"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/BCGenieEffect" -isystem "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" -isystem "${PODS_ROOT}/Headers/Public/ZBarSDK" -isystem "${PODS_ROOT}/Headers/Public/ZXingObjC"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"BCGenieEffect" -l"ZBarSDK" -l"ZXingObjC" -l"iconv" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreBluetooth" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreTelephony" -framework "CoreVideo" -framework "EventKit" -framework "EventKitUI" -framework "GLKit" -framework "GoogleMobileAds" -framework "ImageIO" -framework "MediaPlayer" -framework "MessageUI" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "StoreKit" -framework "SystemConfiguration" -weak_framework "AdSupport" -weak_framework "SafariServices"
-PODS_BUILD_DIR = $BUILD_DIR
-PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAdsFramework-Current" "${PODS_ROOT}/GoogleAppMeasurement/Frameworks" "${PODS_ROOT}/GoogleUserMessagingPlatform/Frameworks/Release" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Google-Mobile-Ads-SDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/AdIdSupport" "${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleAppMeasurement/WithoutAdIdSupport" "${PODS_XCFRAMEWORKS_BUILD_DIR}/GoogleUserMessagingPlatform"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 NDEBUG=1 $(inherited) PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BCGenieEffect" "${PODS_ROOT}/Headers/Public/GoogleUtilities" "${PODS_ROOT}/Headers/Public/PromisesObjC" "${PODS_ROOT}/Headers/Public/ZBarSDK" "${PODS_ROOT}/Headers/Public/ZXingObjC" "${PODS_ROOT}/Headers/Public/nanopb"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BCGenieEffect" "${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities" "${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC" "${PODS_CONFIGURATION_BUILD_DIR}/ZBarSDK" "${PODS_CONFIGURATION_BUILD_DIR}/ZXingObjC" "${PODS_CONFIGURATION_BUILD_DIR}/nanopb"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_ROOT}/Headers/Public/FBLPromises/PromisesObjC.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"BCGenieEffect" -l"GoogleUtilities" -l"PromisesObjC" -l"ZBarSDK" -l"ZXingObjC" -l"c++" -l"iconv" -l"nanopb" -l"sqlite3" -l"z" -framework "AVFoundation" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreVideo" -framework "GoogleAppMeasurement" -framework "GoogleAppMeasurementIdentitySupport" -framework "GoogleMobileAds" -framework "ImageIO" -framework "MediaPlayer" -framework "MessageUI" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UserMessagingPlatform" -framework "WebKit" -weak_framework "AdSupport" -weak_framework "JavaScriptCore" -weak_framework "SafariServices" -weak_framework "WebKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Public/FBLPromises/PromisesObjC.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

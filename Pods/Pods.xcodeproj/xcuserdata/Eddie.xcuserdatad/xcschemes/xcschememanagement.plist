@@ -9,12 +9,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Label My Stuff Tests.xcscheme</key>
+		<key>Google-Mobile-Ads-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleAppMeasurement.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleUserMessagingPlatform.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleUtilities.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Label My Stuff.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PromisesObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,34 +49,13 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>nanopb.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>020324C07145D006727D8EF55AF37751</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>0805C3404C8B3754849AA5C35201E96B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5EF7DDEE918A6B1E18A13D80A10B65B3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6387887E66EF4F3DD4D9B844B260CB25</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>78775F5134353EBAB556FF5F9DDBDA9E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

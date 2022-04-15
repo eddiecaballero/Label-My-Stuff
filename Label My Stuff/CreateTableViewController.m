@@ -274,11 +274,11 @@
     //http://stackoverflow.com/questions/30158315/admob-ads-not-appear-in-footer-of-uitableview-when-keyboard-is-shown
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
     {
-        self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeLeaderboard];
+        self.bannerView = [[GADBannerView alloc] initWithAdSize:GADAdSizeLeaderboard];
     }
     else
     {
-        self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+        self.bannerView = [[GADBannerView alloc] initWithAdSize:GADAdSizeBanner];
     }
     
     self.bannerView.delegate = self;
@@ -386,11 +386,16 @@
     self.tableView.sectionHeaderHeight = self.bannerView.adSize.size.height;
 }
 
--(void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error
-{
+-(void)bannerView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(NSError *)error {
     self.tableView.sectionHeaderHeight = 0.0f;
     self.bannerView = nil;
 }
+
+//-(void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error
+//{
+//    self.tableView.sectionHeaderHeight = 0.0f;
+//    self.bannerView = nil;
+//}
 
 #pragma mark - Table view data source (Required)
 
