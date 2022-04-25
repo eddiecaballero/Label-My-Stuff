@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <GoogleMobileAds/GoogleMobileAds.h>
+//#import <GoogleMobileAds/GoogleMobileAds.h>
+@import GoogleMobileAds;
 
 @implementation AppDelegate
 
@@ -22,6 +23,8 @@
     
     //[GADMobileAds configureWithApplicationID:kadAppID];
     [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+    //GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers =
+        @[GADSimulatorID];
     
     
     //NSLog(@"HOME DIRECTORY: %@", [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);

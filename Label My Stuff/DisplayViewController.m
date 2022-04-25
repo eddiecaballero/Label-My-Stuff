@@ -42,19 +42,21 @@
 
 - (void)showStatusBar
 {
-    UIWindow *statusBarWindow = [(UIWindow *)[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
-    CGRect frame = statusBarWindow.frame;
-    frame.origin.y = 0;
-    statusBarWindow.frame = frame;
+//    UIWindow *statusBarWindow = [(UIWindow *)[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
+//    CGRect frame = statusBarWindow.frame;
+//    frame.origin.y = 0;
+//    statusBarWindow.frame = frame;
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)hideStatusBar
 {
-    UIWindow *statusBarWindow = [(UIWindow *)[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
-    CGRect frame = statusBarWindow.frame;
-    CGSize statuBarFrameSize = [UIApplication sharedApplication].statusBarFrame.size;
-    frame.origin.y = -statuBarFrameSize.height;
-    statusBarWindow.frame = frame;
+//    UIWindow *statusBarWindow = [(UIWindow *)[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
+//    CGRect frame = statusBarWindow.frame;
+//    CGSize statuBarFrameSize = [UIApplication sharedApplication].statusBarFrame.size;
+//    frame.origin.y = -statuBarFrameSize.height;
+//    statusBarWindow.frame = frame;
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 -(void)setUpNavigationBarAndToolbar
