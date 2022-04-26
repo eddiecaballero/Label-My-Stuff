@@ -181,6 +181,8 @@
 	<string>The app uses the camera to scan or take photo.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>The app uses the Photos library to browse and select your photos.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>This identifier will be used to deliver personalized ads to you.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>

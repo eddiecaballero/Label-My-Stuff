@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 //#import <GoogleMobileAds/GoogleMobileAds.h>
 @import GoogleMobileAds;
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#import <AdSupport/AdSupport.h>
 
 @implementation AppDelegate
 
@@ -22,10 +24,9 @@
     [application setStatusBarHidden:NO];
     
     //[GADMobileAds configureWithApplicationID:kadAppID];
-    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+    //[[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
     //GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers =
         @[GADSimulatorID];
-    
     
     //NSLog(@"HOME DIRECTORY: %@", [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
     
@@ -52,6 +53,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [self requestIDFA];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -60,6 +62,21 @@
     
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+#pragma mark - Tracking
+
+- (void)requestIDFA {
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            // Tracking authorization completed. Start loading ads here.
+            // [self loadAd];
+            [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+        }];
+    } else {
+        // Fallback on earlier versions
+        [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+    }
 }
 
 #pragma mark - saveContext
