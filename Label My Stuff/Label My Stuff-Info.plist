@@ -178,9 +178,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>The app uses the camera to scan or take photo.</string>
+	<string>Allow access to the camera in order to scan the labels you create and take photos you wish to add to the app.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>The app uses the Photos library to browse and select your photos.</string>
+	<string>Allow access to photos to upload photos from your library.</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>This identifier will be used to deliver personalized ads to you.</string>
 	<key>UILaunchStoryboardName</key>

@@ -1,4 +1,5 @@
 /* Localized versions of Info.plist keys */
 
-"NSCameraUsageDescription" = "La aplicación usa la cámara para escanear o tomar fotos.";
-"NSPhotoLibraryUsageDescription" = "La aplicación utiliza la biblioteca de Fotos para buscar y seleccionar tus fotos.";
+"NSCameraUsageDescription" = "Permita el acceso a la cámara para escanear las etiquetas que cree y tome las fotos que desee agregar a la aplicación.";
+"NSPhotoLibraryUsageDescription" = "Permita el acceso a las fotos para cargar fotos de su biblioteca.";
+"NSUserTrackingUsageDescription" = "Este identificador se utilizará para enviarle anuncios personalizados.";
