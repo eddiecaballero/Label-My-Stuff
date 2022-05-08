@@ -599,7 +599,7 @@
     [super viewDidLoad];
     
     [self setUpNormalNavigationBarAndToolbar];
-    
+    self.collectionView.backgroundColor = UIColor.blackColor;
     [self backgroundImage];
     
     self.title = [self.currentURL lastPathComponent];

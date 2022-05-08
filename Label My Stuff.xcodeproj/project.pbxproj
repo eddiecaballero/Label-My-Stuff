@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C04D17B1D1E21F0003BE7C6 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C04D17A1D1E21F0003BE7C6 /* checkmark.png */; };
+		2C0BAF83282650F40080826C /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BAF82282650F40080826C /* UIColor+.swift */; };
 		2C0DBCCD1D514D6500DDEF9C /* nophoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0DBCCC1D514D6500DDEF9C /* nophoto.png */; };
 		2C1C94A219F07DD200D8DFC2 /* AddToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1C94A119F07DD200D8DFC2 /* AddToViewController.m */; };
 		2C367A6E191F309D00B3ACDD /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C367A6D191F309D00B3ACDD /* DisplayViewController.m */; };
@@ -58,6 +59,8 @@
 
 /* Begin PBXFileReference section */
 		2C04D17A1D1E21F0003BE7C6 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		2C0BAF81282650F30080826C /* Label My Stuff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Label My Stuff-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C0BAF82282650F40080826C /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		2C0DBCCC1D514D6500DDEF9C /* nophoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nophoto.png; sourceTree = "<group>"; };
 		2C1C94A019F07DD200D8DFC2 /* AddToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToViewController.h; sourceTree = "<group>"; };
 		2C1C94A119F07DD200D8DFC2 /* AddToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToViewController.m; sourceTree = "<group>"; };
@@ -208,6 +211,7 @@
 				2C4D3ACD19901AF700FC7840 /* UIView+Additions.m */,
 				2CB30D761D07552C00B76464 /* UIWindow+Additions.h */,
 				2CB30D771D07552C00B76464 /* UIWindow+Additions.m */,
+				2C0BAF82282650F40080826C /* UIColor+.swift */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -296,6 +300,7 @@
 				2CA7CAD11E085ED70051A6CD /* Localizable.strings */,
 				2CD7DE5319119B63001D1FB5 /* main.m */,
 				2CD7DE5519119B63001D1FB5 /* Label My Stuff-Prefix.pch */,
+				2C0BAF81282650F30080826C /* Label My Stuff-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 				TargetAttributes = {
 					2CD7DE4319119B63001D1FB5 = {
 						DevelopmentTeam = 6A37XSZL98;
+						LastSwiftMigration = 1330;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -496,6 +502,7 @@
 				2CDF66201AE1E0BC00190E88 /* Nav2ViewController.m in Sources */,
 				2C6D0DCF1A62029900458416 /* InitViewController.m in Sources */,
 				2C5F5121193FA110006AD8FB /* CollectionCell.m in Sources */,
+				2C0BAF83282650F40080826C /* UIColor+.swift in Sources */,
 				2C53B6F4198075C3004F3238 /* Folder.m in Sources */,
 				2CD7DE5419119B63001D1FB5 /* main.m in Sources */,
 				2C53B6F119804C52004F3238 /* PrintView.m in Sources */,
@@ -662,6 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Eduardo Caballero (4494K4X6B8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6A37XSZL98;
@@ -669,10 +677,14 @@
 				GCC_PREFIX_HEADER = "Label My Stuff/Label My Stuff-Prefix.pch";
 				INFOPLIST_FILE = "Label My Stuff/Label My Stuff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardocaballero.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Label My Stuff";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Label My Stuff/Label My Stuff-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -683,6 +695,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Eduardo Caballero (4494K4X6B8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6A37XSZL98;
@@ -690,10 +703,13 @@
 				GCC_PREFIX_HEADER = "Label My Stuff/Label My Stuff-Prefix.pch";
 				INFOPLIST_FILE = "Label My Stuff/Label My Stuff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardocaballero.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Label My Stuff";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Label My Stuff/Label My Stuff-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

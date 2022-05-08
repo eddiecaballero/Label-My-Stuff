@@ -7,6 +7,7 @@
 //
 
 #import "TableCell.h"
+#import "Label_My_Stuff-Swift.h"
 
 @implementation TableCell
 
@@ -16,6 +17,12 @@
     
     //https://stackoverflow.com/questions/320078/adding-the-clear-button-to-an-iphone-uitextfield
     self.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    self.backgroundColor = UIColor.whiteColor;
+    self.textField.textColor = UIColor.systemBlueColorLegacy;
+    
+    UIView *bgColorView = [[UIView alloc] init];
+    bgColorView.backgroundColor = [UIColor lightGrayColor];
+    [self setSelectedBackgroundView:bgColorView];
 }
 
 @end
