@@ -678,7 +678,7 @@
 				INFOPLIST_FILE = "Label My Stuff/Label My Stuff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardocaballero.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Label My Stuff";
 				PROVISIONING_PROFILE = "";
@@ -704,7 +704,7 @@
 				INFOPLIST_FILE = "Label My Stuff/Label My Stuff-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eduardocaballero.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "Label My Stuff";
 				PROVISIONING_PROFILE = "";

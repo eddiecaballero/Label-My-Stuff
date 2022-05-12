@@ -380,8 +380,14 @@
 
 #pragma mark - Google Ad Banner Delegate (Optional)
 
--(void)adViewDidReceiveAd:(GADBannerView *)bannerView
-{
+//-(void)adViewDidReceiveAd:(GADBannerView *)bannerView
+//{
+//    self.tableView.tableHeaderView = self.bannerView;
+//    self.tableView.sectionHeaderHeight = self.bannerView.adSize.size.height;
+//    NSLog(@"XXXXXXXXXXXXX: adViewDidReceiveAd");
+//}
+
+-(void)bannerViewDidReceiveAd:(GADBannerView *)bannerView {
     self.tableView.tableHeaderView = self.bannerView;
     self.tableView.sectionHeaderHeight = self.bannerView.adSize.size.height;
 }
